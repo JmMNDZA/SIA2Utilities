@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="Main">
+    <file>utilities.png</file>
+  </qresource>
+  <qresource prefix="Buttons">
+    <file>check.png</file>
+    <file>square-x.png</file>
+  </qresource>
+</RCC>
