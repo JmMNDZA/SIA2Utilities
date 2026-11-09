@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignUpForm</class>
+ <widget class="QWidget" name="SignUpForm">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>500</width><height>650</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>SIA2 Utilities</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #1E1E1E;
+    color: white;
+    font-family: Arial;
+    font-size: 18px;
+}
+QGroupBox {
+    border: 1px solid #999999;
+    border-radius: 7px;
+    margin-top: 12px;
+    padding-top: 10px;
+    font-size: 19px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 5px;
+    color: white;
+}
+QLabel {
+    color: white;
+    background: transparent;
+}
+QLineEdit {
+    background-color: #2B2B2B;
+    color: white;
+    border: 1px solid #393939;
+    border-radius: 6px;
+    padding: 5px 8px;
+    font-size: 17px;
+}
+QLineEdit:focus {
+    border: 1px solid #777777;
+}
+QCheckBox {
+    spacing: 8px;
+    color: white;
+    font-size: 17px;
+}
+QCheckBox::indicator {
+    width: 19px;
+    height: 19px;
+    border: 1px solid #AAAAAA;
+    border-radius: 6px;
+    background-color: #1E1E1E;
+}
+QCheckBox::indicator:checked {
+    background-color: #444444;
+    border: 1px solid #AAAAAA;
+}
+QPushButton {
+    background-color: #2B2B2B;
+    color: white;
+    border: 1px solid #393939;
+    border-radius: 6px;
+    font-size: 19px;
+}
+QPushButton:hover {
+    background-color: #393939;
+}
+QPushButton:pressed {
+    background-color: #444444;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="main_layout">
+   <property name="leftMargin"><number>17</number></property>
+   <property name="topMargin"><number>15</number></property>
+   <property name="rightMargin"><number>17</number></property>
+   <property name="bottomMargin"><number>12</number></property>
+   <property name="spacing"><number>12</number></property>
+   <item>
+    <widget class="QGroupBox" name="welcome_group">
+     <property name="title"><string>Welcome</string></property>
+     <layout class="QVBoxLayout" name="group_layout">
+      <property name="leftMargin"><number>13</number></property>
+      <property name="topMargin"><number>17</number></property>
+      <property name="rightMargin"><number>13</number></property>
+      <property name="bottomMargin"><number>15</number></property>
+      <property name="spacing"><number>9</number></property>
+      <item><widget class="QLabel" name="username_label"><property name="text"><string>Username</string></property></widget></item>
+      <item>
+       <widget class="QLineEdit" name="username_input">
+        <property name="minimumSize"><size><width>0</width><height>36</height></size></property>
+       </widget>
+      </item>
+      <item><widget class="QLabel" name="email_label"><property name="text"><string>Email Address</string></property></widget></item>
+      <item>
+       <widget class="QLineEdit" name="email_input">
+        <property name="minimumSize"><size><width>0</width><height>36</height></size></property>
+       </widget>
+      </item>
+      <item><widget class="QLabel" name="password_label"><property name="text"><string>Password</string></property></widget></item>
+      <item>
+       <widget class="QLineEdit" name="password_input">
+        <property name="minimumSize"><size><width>0</width><height>36</height></size></property>
+        <property name="echoMode"><enum>QLineEdit::Password</enum></property>
+       </widget>
+      </item>
+      <item><widget class="QLabel" name="confirm_label"><property name="text"><string>Confirm Password</string></property></widget></item>
+      <item>
+       <widget class="QLineEdit" name="confirm_password_input">
+        <property name="minimumSize"><size><width>0</width><height>36</height></size></property>
+        <property name="echoMode"><enum>QLineEdit::Password</enum></property>
+       </widget>
+      </item>
+      <item><widget class="QCheckBox" name="show_password"><property name="text"><string>Show Password</string></property></widget></item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="top_stretch">
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+     <property name="sizeHint" stdset="0"><size><width>20</width><height>20</height></size></property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="signup_button">
+     <property name="minimumSize"><size><width>0</width><height>38</height></size></property>
+     <property name="text"><string>Create Account</string></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="google_label">
+     <property name="text"><string>or Sign Up with</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="google_button">
+     <property name="minimumSize"><size><width>0</width><height>38</height></size></property>
+     <property name="text"><string>Google</string></property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="bottom_stretch">
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+     <property name="sizeHint" stdset="0"><size><width>20</width><height>20</height></size></property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="bottom_layout">
+     <item><widget class="QLabel" name="already_label"><property name="text"><string>Already have an account?</string></property></widget></item>
+     <item>
+      <widget class="QPushButton" name="login_button">
+       <property name="minimumSize"><size><width>0</width><height>38</height></size></property>
+       <property name="text"><string>Log In</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
