@@ -15,9 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QGridLayout, QGroupBox,
-    QHBoxLayout, QLabel, QLineEdit, QPushButton,
-    QScrollArea, QSizePolicy, QSpacerItem, QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QGridLayout, QGroupBox,
+    QLabel, QPushButton, QScrollArea, QSizePolicy,
+    QSpacerItem, QSpinBox, QVBoxLayout, QWidget)
 
 class Ui_w_FakeDataGenerator(object):
     def setupUi(self, w_FakeDataGenerator):
@@ -31,167 +31,104 @@ class Ui_w_FakeDataGenerator(object):
         self.groupBox.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.gridLayout_2 = QGridLayout(self.groupBox)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.horizontalLayout = QHBoxLayout()
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.pushButton = QPushButton(self.groupBox)
-        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton_3 = QPushButton(self.groupBox)
+        self.pushButton_3.setObjectName(u"pushButton_3")
 
-        self.horizontalLayout.addWidget(self.pushButton)
-
-
-        self.gridLayout_2.addLayout(self.horizontalLayout, 2, 0, 1, 1)
-
-        self.pushButton_4 = QPushButton(self.groupBox)
-        self.pushButton_4.setObjectName(u"pushButton_4")
-
-        self.gridLayout_2.addWidget(self.pushButton_4, 2, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.pushButton_3, 4, 0, 1, 2)
 
         self.scrollArea = QScrollArea(self.groupBox)
         self.scrollArea.setObjectName(u"scrollArea")
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 400, 374))
-        self.gridLayout_3 = QGridLayout(self.scrollAreaWidgetContents_3)
-        self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.lineEdit_4 = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit_4.setObjectName(u"lineEdit_4")
-
-        self.gridLayout_3.addWidget(self.lineEdit_4, 8, 0, 1, 2)
-
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 408, 371))
+        self.verticalLayout_2 = QVBoxLayout(self.scrollAreaWidgetContents_3)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.label = QLabel(self.scrollAreaWidgetContents_3)
         self.label.setObjectName(u"label")
+        self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        self.gridLayout_3.addWidget(self.label, 2, 0, 1, 1)
+        self.verticalLayout_2.addWidget(self.label)
 
-        self.comboBox_8 = QComboBox(self.scrollAreaWidgetContents_3)
-        self.comboBox_8.setObjectName(u"comboBox_8")
+        self.checkBox = QCheckBox(self.scrollAreaWidgetContents_3)
+        self.checkBox.setObjectName(u"checkBox")
 
-        self.gridLayout_3.addWidget(self.comboBox_8, 12, 2, 1, 1)
+        self.verticalLayout_2.addWidget(self.checkBox)
 
-        self.lineEdit_3 = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit_3.setObjectName(u"lineEdit_3")
+        self.checkBox_2 = QCheckBox(self.scrollAreaWidgetContents_3)
+        self.checkBox_2.setObjectName(u"checkBox_2")
 
-        self.gridLayout_3.addWidget(self.lineEdit_3, 7, 0, 1, 2)
+        self.verticalLayout_2.addWidget(self.checkBox_2)
 
-        self.comboBox_7 = QComboBox(self.scrollAreaWidgetContents_3)
-        self.comboBox_7.setObjectName(u"comboBox_7")
+        self.checkBox_3 = QCheckBox(self.scrollAreaWidgetContents_3)
+        self.checkBox_3.setObjectName(u"checkBox_3")
 
-        self.gridLayout_3.addWidget(self.comboBox_7, 11, 2, 1, 1)
+        self.verticalLayout_2.addWidget(self.checkBox_3)
 
-        self.lineEdit_10 = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit_10.setObjectName(u"lineEdit_10")
+        self.checkBox_4 = QCheckBox(self.scrollAreaWidgetContents_3)
+        self.checkBox_4.setObjectName(u"checkBox_4")
 
-        self.gridLayout_3.addWidget(self.lineEdit_10, 14, 0, 1, 2)
+        self.verticalLayout_2.addWidget(self.checkBox_4)
 
-        self.comboBox_9 = QComboBox(self.scrollAreaWidgetContents_3)
-        self.comboBox_9.setObjectName(u"comboBox_9")
+        self.checkBox_5 = QCheckBox(self.scrollAreaWidgetContents_3)
+        self.checkBox_5.setObjectName(u"checkBox_5")
 
-        self.gridLayout_3.addWidget(self.comboBox_9, 13, 2, 1, 1)
+        self.verticalLayout_2.addWidget(self.checkBox_5)
 
-        self.lineEdit = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.checkBox_6 = QCheckBox(self.scrollAreaWidgetContents_3)
+        self.checkBox_6.setObjectName(u"checkBox_6")
 
-        self.gridLayout_3.addWidget(self.lineEdit, 5, 0, 1, 2)
+        self.verticalLayout_2.addWidget(self.checkBox_6)
 
-        self.comboBox_5 = QComboBox(self.scrollAreaWidgetContents_3)
-        self.comboBox_5.setObjectName(u"comboBox_5")
+        self.checkBox_9 = QCheckBox(self.scrollAreaWidgetContents_3)
+        self.checkBox_9.setObjectName(u"checkBox_9")
 
-        self.gridLayout_3.addWidget(self.comboBox_5, 9, 2, 1, 1)
+        self.verticalLayout_2.addWidget(self.checkBox_9)
 
-        self.comboBox_3 = QComboBox(self.scrollAreaWidgetContents_3)
-        self.comboBox_3.setObjectName(u"comboBox_3")
+        self.checkBox_7 = QCheckBox(self.scrollAreaWidgetContents_3)
+        self.checkBox_7.setObjectName(u"checkBox_7")
 
-        self.gridLayout_3.addWidget(self.comboBox_3, 7, 2, 1, 1)
+        self.verticalLayout_2.addWidget(self.checkBox_7)
 
-        self.lineEdit_8 = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit_8.setObjectName(u"lineEdit_8")
+        self.checkBox_8 = QCheckBox(self.scrollAreaWidgetContents_3)
+        self.checkBox_8.setObjectName(u"checkBox_8")
 
-        self.gridLayout_3.addWidget(self.lineEdit_8, 12, 0, 1, 2)
+        self.verticalLayout_2.addWidget(self.checkBox_8)
 
-        self.lineEdit_6 = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit_6.setObjectName(u"lineEdit_6")
+        self.checkBox_10 = QCheckBox(self.scrollAreaWidgetContents_3)
+        self.checkBox_10.setObjectName(u"checkBox_10")
 
-        self.gridLayout_3.addWidget(self.lineEdit_6, 10, 0, 1, 2)
+        self.verticalLayout_2.addWidget(self.checkBox_10)
 
-        self.lineEdit_7 = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit_7.setObjectName(u"lineEdit_7")
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
-        self.gridLayout_3.addWidget(self.lineEdit_7, 11, 0, 1, 2)
+        self.verticalLayout_2.addItem(self.verticalSpacer)
 
-        self.comboBox_10 = QComboBox(self.scrollAreaWidgetContents_3)
-        self.comboBox_10.setObjectName(u"comboBox_10")
+        self.label_3 = QLabel(self.scrollAreaWidgetContents_3)
+        self.label_3.setObjectName(u"label_3")
 
-        self.gridLayout_3.addWidget(self.comboBox_10, 14, 2, 1, 1)
+        self.verticalLayout_2.addWidget(self.label_3)
 
-        self.comboBox_6 = QComboBox(self.scrollAreaWidgetContents_3)
-        self.comboBox_6.setObjectName(u"comboBox_6")
+        self.spinBox = QSpinBox(self.scrollAreaWidgetContents_3)
+        self.spinBox.setObjectName(u"spinBox")
 
-        self.gridLayout_3.addWidget(self.comboBox_6, 10, 2, 1, 1)
-
-        self.comboBox_4 = QComboBox(self.scrollAreaWidgetContents_3)
-        self.comboBox_4.setObjectName(u"comboBox_4")
-
-        self.gridLayout_3.addWidget(self.comboBox_4, 8, 2, 1, 1)
-
-        self.comboBox = QComboBox(self.scrollAreaWidgetContents_3)
-        self.comboBox.setObjectName(u"comboBox")
-
-        self.gridLayout_3.addWidget(self.comboBox, 5, 2, 1, 1)
-
-        self.lineEdit_9 = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit_9.setObjectName(u"lineEdit_9")
-
-        self.gridLayout_3.addWidget(self.lineEdit_9, 13, 0, 1, 2)
-
-        self.label_2 = QLabel(self.scrollAreaWidgetContents_3)
-        self.label_2.setObjectName(u"label_2")
-
-        self.gridLayout_3.addWidget(self.label_2, 2, 2, 1, 1)
-
-        self.lineEdit_2 = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
-
-        self.gridLayout_3.addWidget(self.lineEdit_2, 6, 0, 1, 2)
-
-        self.lineEdit_5 = QLineEdit(self.scrollAreaWidgetContents_3)
-        self.lineEdit_5.setObjectName(u"lineEdit_5")
-
-        self.gridLayout_3.addWidget(self.lineEdit_5, 9, 0, 1, 2)
-
-        self.comboBox_2 = QComboBox(self.scrollAreaWidgetContents_3)
-        self.comboBox_2.setObjectName(u"comboBox_2")
-
-        self.gridLayout_3.addWidget(self.comboBox_2, 6, 2, 1, 1)
-
-        self.pushButton_3 = QPushButton(self.scrollAreaWidgetContents_3)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-
-        self.gridLayout_3.addWidget(self.pushButton_3, 1, 0, 1, 2)
-
-        self.pushButton_2 = QPushButton(self.scrollAreaWidgetContents_3)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-
-        self.gridLayout_3.addWidget(self.pushButton_2, 1, 2, 1, 1)
-
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Maximum)
-
-        self.gridLayout_3.addItem(self.verticalSpacer, 3, 0, 1, 3)
-
-        self.horizontalSpacer = QSpacerItem(20, 20, QSizePolicy.Policy.Maximum, QSizePolicy.Policy.Minimum)
-
-        self.gridLayout_3.addItem(self.horizontalSpacer, 2, 1, 1, 1)
+        self.verticalLayout_2.addWidget(self.spinBox)
 
         self.scrollArea.setWidget(self.scrollAreaWidgetContents_3)
 
-        self.gridLayout_2.addWidget(self.scrollArea, 0, 0, 1, 2)
-
-        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-        self.gridLayout_2.addItem(self.verticalSpacer_2, 1, 0, 1, 2)
+        self.gridLayout_2.addWidget(self.scrollArea, 0, 1, 1, 1)
 
 
-        self.gridLayout.addWidget(self.groupBox, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.groupBox, 1, 0, 1, 2)
+
+        self.pushButton_4 = QPushButton(w_FakeDataGenerator)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+
+        self.gridLayout.addWidget(self.pushButton_4, 2, 1, 1, 1)
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout.addItem(self.horizontalSpacer, 2, 0, 1, 1)
 
 
         self.retranslateUi(w_FakeDataGenerator)
@@ -202,12 +139,19 @@ class Ui_w_FakeDataGenerator(object):
     def retranslateUi(self, w_FakeDataGenerator):
         w_FakeDataGenerator.setWindowTitle(QCoreApplication.translate("w_FakeDataGenerator", u"SIA2Utilities Fake Data Generator", None))
         self.groupBox.setTitle(QCoreApplication.translate("w_FakeDataGenerator", u"Fake Data Generator", None))
-        self.pushButton.setText(QCoreApplication.translate("w_FakeDataGenerator", u"Save as..", None))
+        self.pushButton_3.setText(QCoreApplication.translate("w_FakeDataGenerator", u"Generate Data", None))
+        self.label.setText(QCoreApplication.translate("w_FakeDataGenerator", u"Choose fields", None))
+        self.checkBox.setText(QCoreApplication.translate("w_FakeDataGenerator", u"id", None))
+        self.checkBox_2.setText(QCoreApplication.translate("w_FakeDataGenerator", u"first_name", None))
+        self.checkBox_3.setText(QCoreApplication.translate("w_FakeDataGenerator", u"last_name", None))
+        self.checkBox_4.setText(QCoreApplication.translate("w_FakeDataGenerator", u"age", None))
+        self.checkBox_5.setText(QCoreApplication.translate("w_FakeDataGenerator", u"gender", None))
+        self.checkBox_6.setText(QCoreApplication.translate("w_FakeDataGenerator", u"email", None))
+        self.checkBox_9.setText(QCoreApplication.translate("w_FakeDataGenerator", u"job", None))
+        self.checkBox_7.setText(QCoreApplication.translate("w_FakeDataGenerator", u"race", None))
+        self.checkBox_8.setText(QCoreApplication.translate("w_FakeDataGenerator", u"language", None))
+        self.checkBox_10.setText(QCoreApplication.translate("w_FakeDataGenerator", u"city", None))
+        self.label_3.setText(QCoreApplication.translate("w_FakeDataGenerator", u"Rows", None))
         self.pushButton_4.setText(QCoreApplication.translate("w_FakeDataGenerator", u"Home", None))
-        self.label.setText(QCoreApplication.translate("w_FakeDataGenerator", u"Field", None))
-        self.comboBox_5.setCurrentText("")
-        self.label_2.setText(QCoreApplication.translate("w_FakeDataGenerator", u"Type", None))
-        self.pushButton_3.setText(QCoreApplication.translate("w_FakeDataGenerator", u"Generate Fake Data", None))
-        self.pushButton_2.setText(QCoreApplication.translate("w_FakeDataGenerator", u"View", None))
     # retranslateUi
 
